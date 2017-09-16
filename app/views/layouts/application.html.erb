@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div id="body">
+<div id="header">
+  <title>La web de neurociencia</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <base href="/"/>
+  <meta charset="<?= Yii::$app->charset ?>">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <?= Html::csrfMetaTags() ?>
+  <title><?= Html::encode($this->title) ?></title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <?php $this->head() ?>
+</div>
+<div class="body" id="content">
+
+<%= render 'shared/navbar' %>
+
+<%= yield %>
+
+</div>
+
+<div id="footer">
+
+<%= render 'shared/footer' %>
+
+</div>
+
+
+</html>

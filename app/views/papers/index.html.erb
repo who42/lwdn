@@ -1,0 +1,47 @@
+
+<br>
+<br>
+
+<p id="notice"><%= notice %></p>
+<hr>
+<h2 class="text-center">Listado de Documentos</h2>
+<hr>
+<table class="paperlist" style="margin: 0px auto; text-align: left; width: 1000px;">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Autores</th>
+      <th>Título</th>
+      <th>Año</th>
+      <th>Idioma</th>
+      <th>Descarga</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @papers.each do |paper| %>
+      <tr>
+        <td><%= paper.id %></td>
+        <td><%= paper.autores %></td>
+        <td><%= paper.título %></td>
+        <td><%= paper.año %></td>
+        <td><%= paper.idioma %></td>
+        <td><a href="<%= paper.descarga %>"><%= paper.descarga %></a></td>
+        <td><%= link_to 'Mostrar', paper %></td>
+     <!--   <td><%= link_to 'Editar', edit_paper_path(paper) %></td>
+        <td><%= link_to 'Borrar', paper, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+-->
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<br>
+<!-- <%= link_to 'Crear Documento Nuevo', new_paper_path %> -->
+  <br>
+  <hr>
+</div>
+
+

@@ -1,0 +1,48 @@
+<html lang="es">
+<br>
+<br>
+<nav>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</nav>
+<br>
+<br>
+<div class="col-lg-6 col-lg-offset-3 well">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @paper.id %>
+</p>
+
+<p>
+  <strong>Autores:</strong>
+  <%= @paper.autores %>
+</p>
+
+<p>
+  <strong>Título:</strong>
+  <%= @paper.título %>
+</p>
+
+<p>
+  <strong>Año:</strong>
+  <%= @paper.año %>
+</p>
+
+<p>
+  <strong>Idioma:</strong>
+  <%= @paper.idioma %>
+</p>
+
+<p>
+  <strong>Descarga:</strong>
+  <a href="<%= @paper.descarga %>"><%= @paper.descarga %></a>
+</p>
+
+<!-- <%= link_to 'Editar', edit_paper_path(@paper) %> | -->
+<%= link_to 'Atrás', papers_path %>
+</div>
+
+<br>
+<br>

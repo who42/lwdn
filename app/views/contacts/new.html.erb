@@ -1,0 +1,26 @@
+<br>
+<br>
+<br>
+<br>
+<div align="center" class="col-lg-6 col-lg-offset-3 well">
+  <h3>Formulario de contacto</h3>
+  <div>És necesario rellenar todos los campos del formulario:</div>
+
+  <br>
+  <div style="wrap">
+  <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+    <div style="jumbotron">
+      <%= f.input :nombre, class: 'form-control', autofocus: true, placeholder: 'nombre' %>
+      <%= f.input :email, :required => true %>
+      <%= f.input :mensaje, :as => :text, :required => true %>
+     </div>
+  </div>
+      <div class= "hidden">
+        <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+      </div>
+      <div>
+        </br>
+        <%= f.button :submit, 'Envia el mensaje', :class=> "btn btn-primary" %>
+      </div>
+  <% end %>
+</div>

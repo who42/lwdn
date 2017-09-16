@@ -1,0 +1,24 @@
+<%= simple_form_for(@paper) do |f| %>
+  <%= f.error_notification %>
+<div class="container">
+
+    <table style="margin: 20px auto; text-align: left; width: 200px auto;">
+      <tr>
+        <td><%= f.input :id %></td>
+        <td><%= f.input :autores %></td>
+        <td><%= f.input :título %></td>
+        <td><%= f.input :año %></td>
+        <td><%= f.input :idioma %></td>
+        <td><%= f.input :descarga %></td>
+      </tr>
+    </table>
+  </div>
+   <br>
+  <div class="form-actions">
+  <div class="col-lg-6 col-lg-offset-3">
+    <%= f.button :submit %>
+  </div>
+  </div>
+<% end %>
+</div>
+<br>

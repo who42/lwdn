@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 
+  autores: MyString
+  titulo: MyString
+  ano: 
+  idioma: MyString
+  descarga: MyString
+
+two:
+  id: 
+  autores: MyString
+  titulo: MyString
+  ano: 
+  idioma: MyString
+  descarga: MyString
